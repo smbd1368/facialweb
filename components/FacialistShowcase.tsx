@@ -1,0 +1,3 @@
+﻿import Image from "next/image";
+export function FacialistShowcase(){return <section className="facialist-showcase section"><div className="facialist-copy"><span className="section-label">هنرِ مراقبت با مریم میرشکاری</span><h2>دستانی دقیق،<br/><em>تجربه‌ای آرام</em></h2><p>اینجا هر لمس هدف دارد؛ آرام‌کردن پوست، بازگرداندن طراوت و ساختن لحظه‌ای که تماماً برای توست.</p></div><div className="facialist-media"><figure><Image src="/Facialist/Gemini_Generated_Image_knfc94knfc94knfc.png" alt="مریم میرشکاری در حال انجام فیشال" fill sizes="(max-width:700px) 100vw, 35vw"/></figure><video controls playsInline preload="metadata" poster="/Facialist/Gemini_Generated_Image_ttt04yttt04yttt0.png"><source src="/Facialist/moview-1.mp4" type="video/mp4"/></video></div></section>}
+

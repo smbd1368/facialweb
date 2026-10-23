@@ -1,0 +1,45 @@
+.service-card {
+  min-height: 440px;
+  overflow: hidden;
+}
+
+.service-image {
+  position: relative;
+  height: 190px;
+  margin: -28px -28px 20px;
+  overflow: hidden;
+}
+
+.service-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(38, 34, 29, 0.16), transparent 55%);
+}
+
+.service-image img {
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.service-card:hover .service-image img {
+  transform: scale(1.055);
+}
+
+.service-card > svg:not(.card-arrow) {
+  position: absolute;
+  top: 164px;
+  left: 22px;
+  width: 44px;
+  height: 44px;
+  padding: 11px;
+  border-radius: 50%;
+  background: #faf7f1;
+  box-shadow: 0 8px 24px rgba(39, 35, 31, 0.12);
+}
+
+@media (max-width: 650px) {
+  .service-card { min-height: 430px; }
+  .service-image { height: 210px; }
+  .service-card > svg:not(.card-arrow) { top: 184px; }
+}
