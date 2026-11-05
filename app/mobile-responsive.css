@@ -1,0 +1,120 @@
+/* Mobile-first responsive corrections for FaceShiraz */
+:root { overflow-x: clip; }
+html, body { width: 100%; max-width: 100%; overflow-x: clip; }
+body, main { min-width: 0; }
+img, video, canvas, svg { max-width: 100%; }
+main > * { min-width: 0; }
+section, header, footer { min-width: 0; }
+p, h1, h2, h3, a, button, span { overflow-wrap: anywhere; }
+button, a { -webkit-tap-highlight-color: transparent; }
+[id] { scroll-margin-top: 84px; }
+
+@media (max-width: 900px) {
+  .nav { gap: 14px; }
+  .links { z-index: 60; }
+  .hero-copy { max-width: 680px; }
+  .intro-grid, .journey, .faq { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .review-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .facialist-showcase { grid-template-columns: minmax(0, 1fr); }
+  .facialist-media { min-width: 0; }
+}
+
+@media (max-width: 650px) {
+  html { scroll-padding-top: 70px; }
+  [id] { scroll-margin-top: 72px; }
+  .nav { height: 68px; padding: 0 16px; gap: 10px; }
+  .logo { gap: 8px; }
+  .logo i { width: 34px; height: 34px; }
+  .logo span { font-size: 16px; }
+  .links { top: 68px; padding: 18px 22px 24px; gap: 0; box-shadow: 0 18px 30px rgba(30,24,18,.12); }
+  .links a { display: block; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+  .menu { display: grid; place-items: center; width: 42px; height: 42px; padding: 8px; flex: 0 0 42px; }
+  .menu svg { width: 23px; height: 23px; }
+  .hero { min-height: min(850px, 100svh); min-height: max(700px, 100svh); padding: 100px 22px 76px; align-items: flex-end; }
+  .hero-photo { inset: 0 -28% 0 -10%; }
+  .hero-photo img { object-position: 48% center; }
+  .hero-shade { background: linear-gradient(0deg, #faf7f1 5%, rgba(250,247,241,.94) 25%, rgba(250,247,241,.24) 72%, rgba(250,247,241,.12)); }
+  .hero-copy { width: 100%; max-width: none; }
+  .hero h1 { font-size: clamp(30px, 8.2vw, 40px); line-height: 1.55; margin: 16px 0; }
+  .hero h1 br { display: none; }
+  .hero-copy > p { max-width: 100%; font-size: 14px; line-height: 2; }
+  .eyebrow, .section-label { font-size: 11px; line-height: 1.9; }
+  .actions { gap: 14px; flex-wrap: wrap; margin-top: 24px; }
+  .pill { padding: 11px 18px; }
+  .signature { margin-top: 25px; }
+  .section { padding: 68px 22px; }
+  .intro-grid, .benefits, .journey, .faq { display: grid; grid-template-columns: minmax(0,1fr); gap: 28px; }
+  .intro h2, .title-row h2, .journey h2, .faq h2,
+  .reviews h2, .social h2, .benefit-copy h2 { font-size: clamp(32px, 8vw, 42px); line-height: 1.5; }
+  .intro-text p, .title-row > p, .journey-head p { font-size: 14px; line-height: 2.1; }
+  .title-row { display: grid; gap: 14px; margin-bottom: 30px; }
+  .title-row > p { max-width: none; margin: 0; }
+  .service-grid { display: grid; grid-template-columns: minmax(0,1fr); gap: 16px; overflow: visible; padding: 0; }
+  .service-card { min-width: 0; width: 100%; min-height: 0; padding: 22px; }
+  .service-image { height: clamp(170px, 54vw, 220px); margin: -22px -22px 18px; }
+  .service-card > svg:not(.card-arrow) { top: auto; bottom: 86px; left: 18px; }
+  .service-card > span { font-size: 12px; }
+  .service-card h3 { font-size: 18px; }
+  .service-card p { padding-left: 28px; font-size: 12px; }
+  .benefits { min-height: 0; }
+  .benefit-photo { min-height: 0; height: 58vw; max-height: 360px; }
+  .benefit-copy { padding: 54px 22px 62px; }
+  .benefit-list div { gap: 16px; padding: 15px 0; font-size: 13px; }
+  .journey-head, .faq-head { position: static; }
+  .timeline { padding-top: 8px; }
+  .step { grid-template-columns: 28px 12px minmax(0,1fr); gap: 12px; min-height: 140px; }
+  .step > span:after { height: 126px; }
+  .step h3 { font-size: 17px; line-height: 1.7; }
+  .step p { font-size: 12px; }
+  .result { padding: 0; }
+  .result-card { min-height: 560px; padding: 58px 24px; }
+  .result-card h2 { font-size: clamp(36px, 9vw, 48px); line-height: 1.5; }
+  .result-stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
+  .result-stats b { font-size: 21px; }
+  .result-stats span { font-size: 10px; line-height: 1.8; }
+  .review-grid { grid-template-columns: minmax(0,1fr); gap: 14px; margin-top: 32px; }
+  .review-grid blockquote { min-height: 0; padding: 26px 22px; }
+  .review-grid p { font-size: 14px; }
+  .social { display: grid; grid-template-columns: minmax(0,1fr); gap: 18px; }
+  .social > a { width: fit-content; max-width: 100%; margin: 0; }
+  .social-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 8px; margin-top: 12px; }
+  .social-tile { min-width: 0; }
+  .faq { gap: 18px; }
+  .accordions button { gap: 16px; padding: 19px 0; }
+  .accordions button span { font-size: 13px; line-height: 1.9; }
+  .accordions p { padding-left: 0; font-size: 12px; }
+  .contact { min-height: 0; padding: 78px 22px; }
+  .contact h2 { font-size: clamp(32px, 8vw, 43px); line-height: 1.55; }
+  .contact .actions { align-items: stretch; flex-direction: column; gap: 12px; }
+  .contact .actions a { justify-content: center; min-height: 48px; }
+  body > main > footer { min-height: 0; padding: 36px 22px; display: flex; flex-direction: column; align-items: flex-start; gap: 14px; font-size: 11px; }
+  body > main > footer .logo { margin: 0; }
+  .customer-stories .customer-heading { margin-bottom: 34px; }
+  .customer-heading h2 { font-size: clamp(32px, 8vw, 42px); }
+  .customer-heading p { font-size: 13px; line-height: 2; }
+  .story-list { gap: 48px; }
+  .story-list article header span { font-size: 15px; }
+  .triptych { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 6px; overflow: visible; }
+  .triptych figure { min-width: 0; }
+  .triptych figure > div { aspect-ratio: 3 / 4; }
+  .triptych figcaption { font-size: 10px; }
+  .facialist-showcase { display: grid; grid-template-columns: minmax(0,1fr); gap: 24px; }
+  .facialist-copy h2 { font-size: clamp(34px, 8vw, 44px); }
+  .facialist-media { display: grid; grid-template-columns: minmax(0,1fr); gap: 16px; overflow: visible; }
+  .facialist-media figure { width: 100%; max-height: 520px; aspect-ratio: 4 / 5; }
+  .facialist-media video { width: 100%; height: auto; max-height: none; }
+}
+
+@media (max-width: 380px) {
+  .hero { padding-left: 18px; padding-right: 18px; }
+  .section { padding-left: 18px; padding-right: 18px; }
+  .hero h1 { font-size: 30px; }
+  .result-stats { grid-template-columns: 1fr 1fr; }
+  .triptych { grid-template-columns: 1fr; gap: 14px; }
+  .triptych figure > div { aspect-ratio: 4 / 3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+}
