@@ -35,8 +35,8 @@ export function FaceShiraz() {
   return <main>
     <motion.div className="progress" style={{ scaleX: progress }} />
     <header className="nav"><a href="#home" className="logo"><i>F</i><span>FaceShiraz<small>پوستت را زندگی کن</small></span></a>
-      <nav className={menu ? "links open" : "links"}>{[["خانه","home"],["خدمات","services"],["مزایا","benefits"],["مراحل فیشال","journey"],["نظرات","reviews"],["سوالات","faq"]].map(([t,id])=><a key={id} href={`#${id}`} onClick={()=>setMenu(false)}>{t}</a>)}</nav>
-      <a className="blog-nav-link" href="/blog">مجله پوست</a><a className="pill nav-cta" href="#contact"><CalendarDays size={17}/> رزرو وقت</a>
+      <nav className={menu ? "links open" : "links"}>{[["خانه","home"],["خدمات","services"],["مزایا","benefits"],["مراحل فیشال","journey"],["نظرات","reviews"],["سوالات","faq"]].map(([t,id])=><a key={id} href={`#${id}`} onClick={()=>setMenu(false)}>{t}</a>)}<a href="/blog" onClick={()=>setMenu(false)}>مجله پوست</a></nav>
+      <a className="pill nav-cta" href="#contact"><CalendarDays size={17}/> رزرو وقت</a>
       <button className="menu" onClick={()=>setMenu(!menu)} aria-label="منو">{menu?<X/>:<Menu/>}</button>
     </header>
 
