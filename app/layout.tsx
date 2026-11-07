@@ -5,6 +5,7 @@ import "./media-upgrade.css";
 import "./performance.css";
 import "./hq-sequence.css";
 import "./mobile-responsive.css";
+import "./blog.css";
 
 export const metadata: Metadata = {
   title: "FaceShiraz | فیشال تخصصی در شیراز",
