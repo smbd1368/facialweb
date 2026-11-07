@@ -9,6 +9,9 @@ import "./mobile-responsive.css";
 export const metadata: Metadata = {
   title: "FaceShiraz | فیشال تخصصی در شیراز",
   description: "تجربه‌ای آرام و تخصصی برای پاکسازی، آبرسانی و شادابی پوست با مریم میرشکاری",
+  verification: {
+    google: "Knj2f2PX3ISlxTHoHyrg9ovq4uYjwzcE_0GvUzCgtUk",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
