@@ -45,6 +45,7 @@ export default async function BlogArticle({ params }: { params: Promise<{ slug: 
         <section className="article-faq"><h2>پرسش‌های متداول</h2>{post.faq.map(([q,a]) => <div key={q}><h3>{q}</h3><p>{a}</p></div>)}</section>
         <div className="article-cta"><h2>برای پوستت، آگاهانه انتخاب کن</h2><p>با خدمات مراقبت و فیشال FaceShiraz در شیراز بیشتر آشنا شو.</p><Link href="/main#services">مشاهده خدمات فیشال</Link></div>
       </div>
+      <section className="related-articles"><h2>مطالعه مرتبط</h2><div>{blogPosts.filter((item) => item.slug !== post.slug).slice(0, 2).map((item) => <Link key={item.slug} href={`/blog/${item.slug}`}><span>{item.category}</span><strong>{item.title}</strong><small>مطالعه مقاله ←</small></Link>)}</div></section>
       <footer className="article-bottom"><Link href="/blog">← بازگشت به مجله</Link><Link href="/main">صفحه اصلی FaceShiraz</Link></footer>
     </article>
     <footer className="blog-footer"><Link href="/main">FaceShiraz</Link><span>مراقبت تخصصی پوست با مریم میرشکاری</span><Link href="/main#contact">ارتباط و رزرو</Link></footer>
