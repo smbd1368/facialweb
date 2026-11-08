@@ -86,11 +86,9 @@ export function ScrollStory() {
             </div>
           )}
         </div>
-        {ui.model === 0 && ui.frame < 2 && (
-          <Link href="/main" className="sequence-enter sequence-enter--hero">
-            ورود به دنیای پاکسازی <ArrowUpLeft size={21} />
-          </Link>
-        )}
+        <Link href="/main" className="sequence-enter sequence-enter--hero">
+          ورود به دنیای پاکسازی <ArrowUpLeft size={21} />
+        </Link>
         <div className="phase">
           <span>{phase}</span><i><b style={{ width: `${(ui.frame + 1) * 10}%` }} /></i>
           <em>{String(ui.frame + 1).padStart(2, "0")} / 10</em>
