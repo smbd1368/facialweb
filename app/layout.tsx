@@ -6,10 +6,26 @@ import "./performance.css";
 import "./hq-sequence.css";
 import "./mobile-responsive.css";
 import "./blog.css";
+import "./home-seo.css";
 
 export const metadata: Metadata = {
-  title: "FaceShiraz | فیشال تخصصی در شیراز",
-  description: "تجربه‌ای آرام و تخصصی برای پاکسازی، آبرسانی و شادابی پوست با مریم میرشکاری",
+  metadataBase: new URL("https://faceshiraz.vercel.app"),
+  title: "FaceShiraz | فیشال و مراقبت پوست در شیراز",
+  description:
+    "FaceShiraz؛ آشنایی با خدمات فیشال، پاکسازی و آبرسانی پوست در شیراز، همراه با راهنماهای کاربردی مراقبت از انواع پوست.",
+  applicationName: "FaceShiraz",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "fa_IR",
+    siteName: "FaceShiraz",
+    title: "FaceShiraz | فیشال و مراقبت پوست در شیراز",
+    description:
+      "معرفی خدمات فیشال، پاکسازی و آبرسانی پوست در شیراز و راهنمای مراقبت متناسب با نیاز پوست.",
+    url: "https://faceshiraz.vercel.app/",
+  },
   verification: {
     google: "xhJG9NGcrdcEWgcIR-XC7BMDGGqCXCCoWD2lmsMnefw",
   },
