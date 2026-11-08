@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "FaceShiraz | فیشال تخصصی در شیراز",
   description: "تجربه‌ای آرام و تخصصی برای پاکسازی، آبرسانی و شادابی پوست با مریم میرشکاری",
   verification: {
-    google: "Knj2f2PX3ISlxTHoHyrg9ovq4uYjwzcE_0GvUzCgtUk",
+    google: "xhJG9NGcrdcEWgcIR-XC7BMDGGqCXCCoWD2lmsMnefw",
   },
 };
 
