@@ -6,7 +6,7 @@
 .welcome-copy{margin-top:25px;max-width:430px;animation:copyIn .55s ease both}
 .welcome-copy h2{font-size:clamp(25px,3vw,38px);font-weight:500;margin:0 0 5px;color:#fff}
 .welcome-copy p{font-size:14px;line-height:1.9;color:rgba(255,255,255,.88);margin:0 0 18px}
-.sequence-enter--hero{position:relative;top:auto;left:auto;display:inline-flex;justify-content:center;gap:13px;padding:17px 28px;min-height:62px;border:1px solid rgba(255,255,255,.65);border-radius:999px;background:#f3e4cf;color:#211c17;font-size:16px;font-weight:800;box-shadow:0 12px 34px rgba(0,0,0,.28);transition:transform .2s,background .2s,box-shadow .2s}
+.sequence-enter--hero{position:absolute;z-index:5;top:28px;left:34px;display:inline-flex;justify-content:center;gap:13px;padding:17px 28px;min-height:62px;border:1px solid rgba(255,255,255,.65);border-radius:999px;background:#f3e4cf;color:#211c17;font-size:16px;font-weight:800;box-shadow:0 12px 34px rgba(0,0,0,.28);transition:transform .2s,background .2s,box-shadow .2s}
 .sequence-enter--hero:hover{background:#fff;transform:translateY(-3px);box-shadow:0 16px 38px rgba(0,0,0,.35)}
 .contact-float{position:fixed;z-index:30;right:18px;bottom:20px;display:flex;flex-direction:column;align-items:flex-end;gap:9px;direction:rtl}
 .contact-float a{display:flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:10px 15px;border:1px solid rgba(255,255,255,.28);border-radius:999px;color:#fff;text-decoration:none;font-size:13px;font-weight:700;box-shadow:0 7px 24px rgba(0,0,0,.25);backdrop-filter:blur(12px);transition:transform .2s,filter .2s}
@@ -15,5 +15,5 @@
 .contact-float__whatsapp b{font-size:12px;direction:ltr}
 .contact-float__bale{background:#2476c7}
 .contact-float__call{background:#4c443a}
-@media(max-width:700px){.welcome-copy{margin-top:17px}.welcome-copy h2{font-size:26px}.welcome-copy p{font-size:12px;margin-bottom:13px}.sequence-enter--hero{font-size:14px;min-height:54px;padding:13px 19px}.contact-float{right:10px;bottom:12px;gap:7px}.contact-float a{min-height:42px;padding:9px 12px;font-size:12px}.contact-float__whatsapp b{font-size:11px}}
+@media(max-width:700px){.welcome-copy{margin-top:17px}.welcome-copy h2{font-size:26px}.welcome-copy p{font-size:12px;margin-bottom:13px}.sequence-enter--hero{top:76px;left:18px;font-size:14px;min-height:54px;padding:13px 19px}.contact-float{right:10px;bottom:12px;gap:7px}.contact-float a{min-height:42px;padding:9px 12px;font-size:12px}.contact-float__whatsapp b{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.welcome-copy{animation:none}}
