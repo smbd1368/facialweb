@@ -1,4 +1,4 @@
-export type BlogSection = { heading: string; paragraphs?: string[]; bullets?: string[] };
+export type BlogSection = { heading: string; paragraphs?: string[]; bullets?: string[]; links?: { label: string; url: string }[] };
 export type BlogPost = { slug: string; title: string; description: string; category: string; minutes: number; date: string; intro: string; sections: BlogSection[]; faq: [string, string][] };
 
 export const blogPosts: BlogPost[] = [
@@ -354,6 +354,17 @@ export const blogPosts: BlogPost[] = [
         ]
       }
     ],
+    {
+      "heading": "منابع و مطالعات برای مطالعه بیشتر",
+      "paragraphs": [
+        "اعداد پژوهشی این مقاله برای توضیح تفاوت شاخص‌های پوستی استفاده شده‌اند و نباید به‌عنوان تضمین نتیجه فیشال یا معیار تشخیص فردی تفسیر شوند."
+      ],
+      "links": [
+        { "label": "آکادمی پوست آمریکا: راهنمای لایه‌برداری ایمن", "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/safely-exfoliate-at-home" },
+        { "label": "مطالعه مقایسه سبوم، اندازه منافذ و رطوبت در پوست چرب و خشک (۶۲ شرکت‌کننده)", "url": "https://pubmed.ncbi.nlm.nih.gov/31562649/" },
+        { "label": "مطالعه تغییرات فیزیولوژی پوست صورت پس از شست‌وشو (۲۲ شرکت‌کننده)", "url": "https://pubmed.ncbi.nlm.nih.gov/26100540/" }
+      ]
+    },
     "faq": [
       [
         "فیشال شیراز برای پوست چرب بهتر است یا خشک؟",
