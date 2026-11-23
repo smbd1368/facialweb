@@ -5,3 +5,5 @@
 .blog-nav-link{color:#52695b;text-decoration:none;font-size:13px;white-space:nowrap;align-self:center}.blog-nav-link:hover{color:#9b7950}@media(max-width:650px){.blog-nav-link{display:none}}
 
 .related-articles{margin-top:42px}.related-articles h2{font-size:21px;color:#344c3f}.related-articles>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.related-articles a{display:flex;flex-direction:column;gap:9px;padding:18px;background:#fff;border:1px solid #ece8df;border-radius:12px;text-decoration:none}.related-articles a span,.related-articles a small{font-size:12px;color:#9b7950}.related-articles a strong{font-size:15px;line-height:1.8;color:#354b3e}@media(max-width:600px){.related-articles>div{grid-template-columns:1fr}}
+
+.article-sources{margin:30px 0;padding:20px 22px;background:#f7f8f5;border:1px solid #e7ebe4;border-radius:14px}.article-sources h2{font-size:18px;margin:0 0 12px;color:#344c3f}.article-sources ul{margin:0;padding-right:20px}.article-sources li{margin:8px 0;line-height:1.9}.article-sources a{color:#52695b;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}.article-sources a:hover{color:#9b7950}
