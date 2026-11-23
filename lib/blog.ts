@@ -1,5 +1,7 @@
 export type BlogSection = { heading: string; paragraphs?: string[]; bullets?: string[]; links?: { label: string; url: string }[] };
-export type BlogPost = { slug: string; title: string; description: string; category: string; minutes: number; date: string; intro: string; sections: BlogSection[]; faq: [string, string][] };
+export type BlogPost = { slug: string; title: string; description: string; category: string; minutes: number; date: string; intro: string; sections: BlogSection[]; faq: [string, string][]; sources?: { label: string; url: string }[] };
+
+import { shirazFacialPost } from "./blog-shiraz";
 
 export const blogPosts: BlogPost[] = [
   {
@@ -388,6 +390,7 @@ export const blogPosts: BlogPost[] = [
       ]
     ]
   }
+  shirazFacialPost,
 ];
 
 export const siteUrl = "https://faceshiraz.vercel.app";
